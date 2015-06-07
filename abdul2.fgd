@@ -1,0 +1,53 @@
+//====== Copyright © 2015, MLG Inc., All rights preserved. =======
+//
+// Purpose: Abdul: Obvesy Fraera entities definition file (.fgd) 
+// wanna get you alone so we can do something wrong 
+//
+//=============================================================================
+
+@include "base.fgd"
+@include "halflife2.fgd"
+
+@PointClass base(Targetname, Origin, Angles) studio( "" ) = ent_weaponspawn : "Obvesy Fraera weapon respawn entity"
+[
+	model(studio) : "Weapon respawn entity model" : "weapons/w_crailgun.mdl"
+	class(choices) : "Weapon class" : "abdul_railgun" =
+	[
+		"abdul_nubogun" : "Nubogun"
+		"abdul_noscoper" : "420noscoper"
+		"abdul_ak47" : "Kalash"
+		"abdul_maslachesator" : "Maslachesator"
+		"abdul_railgun" : "Railgun"
+		"abdul_rocketlauncher" : "Maslorocketnica"
+		"abdul_shotgun" : "Maslobaba"
+		"abdul_claymore" : "MLG18 Claymore"
+	]
+]
+@PointClass base(Targetname, Origin, Angles) studioprop( "models/of_armorshard.mdl" ) = ent_armor : "Obvesy Fraera armor shard entity"
+[
+]
+@PointClass base(Targetname, Origin, Angles) studioprop( "models/w_armor.mdl" ) = ent_armorred : "Obvesy Fraera mega armor entity"
+[
+]
+@PointClass base(Targetname, Origin, Angles) studioprop( "models/w_armor.mdl" ) = ent_armoryellow : "Obvesy Fraera armor entity"
+[
+]
+@PointClass base(Targetname, Origin, Angles) studioprop( "models/of_health25.mdl" ) = ent_healthkit : "Obvesy Fraera 25 health entity"
+[
+]
+@PointClass base(Targetname, Origin, Angles) studioprop( "models/of_health5.mdl" ) = ent_healthvial : "Obvesy Fraera 5 health entity"
+[
+]
+@PointClass base(Targetname, Origin, Angles) studioprop( "models/of_ammo.mdl" ) = ent_ammo : "Obvesy Fraera ammo entity"
+[
+	ammotype(choices) : "Ammo Type" : "RailCells" =
+	[
+		"45ACP" : "Nubogun Ammo"
+		"mlg" : "420noscoper Ammo"
+		"AK47" : "Kalash Ammo"
+		"ShrapBomb" : "Maslachesator Ammo"
+		"RailCells" : "Railgun Ammo"
+		"rockets" : "Maslorocketnica Ammo"
+		"shotbuck" : "Maslobaba Ammo"
+	]
+]
